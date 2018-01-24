@@ -1,0 +1,15 @@
+<map id="/home/travis/build/AliceO2Group/AliceO2/Detectors/Base/src/Detector.cxx" name="/home/travis/build/AliceO2Group/AliceO2/Detectors/Base/src/Detector.cxx">
+<area shape="rect" id="node2" href="$d1/d3a/Base_2include_2DetectorsBase_2Detector_8h.html" title="DetectorsBase/Detector.h" alt="" coords="641,109,815,136"/>
+<area shape="rect" id="node8" href="$d0/d9a/MaterialManager_8h.html" title="DetectorsBase/MaterialManager.h" alt="" coords="5,184,224,211"/>
+<area shape="rect" id="node14" href="$d6/d31/DetID_8h.html" title="DetectorsBase/DetID.h" alt="" coords="1261,109,1419,136"/>
+<area shape="rect" id="node22" href="$db/d4b/MagneticField_8h.html" title="Definition of the MagF class. " alt="" coords="2104,109,2251,136"/>
+<area shape="rect" id="node19" href="$d9/ded/Utils_8h.html" title="DetectorsBase/Utils.h" alt="" coords="1066,184,1216,211"/>
+<area shape="rect" id="node20" href="$d1/daa/Base_2include_2DetectorsBase_2Constants_8h.html" title="DetectorsBase/Constants.h" alt="" coords="1055,259,1239,285"/>
+<area shape="rect" id="node24" href="$d3/d91/MagFieldParam_8h.html" title="Definition of the MagFieldParam: container for ALICE mag. field parameters. " alt="" coords="2373,184,2528,211"/>
+<area shape="rect" id="node27" href="$dd/dfb/MagneticWrapperChebyshev_8h.html" title="Field/MagneticWrapperChebyshev.h" alt="" coords="2578,184,2811,211"/>
+<area shape="rect" id="node34" href="$da/df4/MagFieldFast_8h.html" title="Definition of the fast magnetic field parametrization MagFieldFast. " alt="" coords="1803,184,1947,211"/>
+<area shape="rect" id="node31" href="$d8/d64/Chebyshev3D_8h.html" title="MathUtils/Chebyshev3D.h" alt="" coords="2887,259,3063,285"/>
+<area shape="rect" id="node33" href="$d4/d08/Chebyshev3DCalc_8h.html" title="MathUtils/Chebyshev3DCalc.h" alt="" coords="2811,341,3013,368"/>
+<area shape="rect" id="node35" href="$dd/d76/Cartesian3D_8h.html" title="MathUtils/Cartesian3D.h" alt="" coords="1601,259,1767,285"/>
+<area shape="rect" id="node42" href="$d2/dd0/Cartesian2D_8h.html" title="MathUtils/Cartesian2D.h" alt="" coords="342,341,508,368"/>
+</map>

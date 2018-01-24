@@ -1,0 +1,15 @@
+<map id="/home/travis/build/AliceO2Group/AliceO2/Detectors/TOF/simulation/src/Detector.cxx" name="/home/travis/build/AliceO2Group/AliceO2/Detectors/TOF/simulation/src/Detector.cxx">
+<area shape="rect" id="node9" href="$d5/d3c/TOF_2simulation_2include_2TOFSimulation_2Detector_8h.html" title="TOFSimulation/Detector.h" alt="" coords="1627,133,1801,160"/>
+<area shape="rect" id="node35" href="$db/dcc/Detectors_2Base_2include_2DetectorsBase_2GeometryManager_8h.html" title="DetectorsBase/GeometryManager.h" alt="" coords="2201,133,2431,160"/>
+<area shape="rect" id="node48" href="$dc/db6/Stack_8h.html" title="Definition of the Stack class. " alt="" coords="887,126,1039,167"/>
+<area shape="rect" id="node10" href="$d1/d3a/Base_2include_2DetectorsBase_2Detector_8h.html" title="DetectorsBase/Detector.h" alt="" coords="1507,224,1681,251"/>
+<area shape="rect" id="node21" href="$d4/d54/Geo_8h.html" title="TOFBase/Geo.h" alt="" coords="1133,224,1249,251"/>
+<area shape="rect" id="node22" href="$d4/d25/BaseHits_8h.html" title="SimulationDataFormat\l/BaseHits.h" alt="" coords="1757,217,1909,258"/>
+<area shape="rect" id="node15" href="$d0/d9a/MaterialManager_8h.html" title="DetectorsBase/MaterialManager.h" alt="" coords="1649,307,1868,333"/>
+<area shape="rect" id="node23" href="$dd/d76/Cartesian3D_8h.html" title="MathUtils/Cartesian3D.h" alt="" coords="2311,307,2477,333"/>
+<area shape="rect" id="node30" href="$d2/dd0/Cartesian2D_8h.html" title="MathUtils/Cartesian2D.h" alt="" coords="2417,389,2583,416"/>
+<area shape="rect" id="node40" href="$d6/d31/DetID_8h.html" title="DetectorsBase/DetID.h" alt="" coords="798,307,956,333"/>
+<area shape="rect" id="node45" href="$d9/ded/Utils_8h.html" title="DetectorsBase/Utils.h" alt="" coords="859,389,1009,416"/>
+<area shape="rect" id="node46" href="$d1/daa/Base_2include_2DetectorsBase_2Constants_8h.html" title="DetectorsBase/Constants.h" alt="" coords="857,480,1041,507"/>
+<area shape="rect" id="node50" href="$d2/de2/MCTrack_8h.html" title="Definition of the MCTrack class. " alt="" coords="489,217,641,258"/>
+</map>

@@ -1,0 +1,4 @@
+var structis__defined_3_01S_00_01T_00_01std_1_1enable__if__t_3_01std_1_1is__object_3_01T_01_4_1_1valb5966dad14b6078bf8ecfc4b3579e962 =
+[
+    [ "logger", "dc/db8/structis__defined_3_01S_00_01T_00_01std_1_1enable__if__t_3_01std_1_1is__object_3_01T_01_4_1_1valb5966dad14b6078bf8ecfc4b3579e962.html#aac7e08b5d49c5db026cd7c3456a2e03c", null ]
+];

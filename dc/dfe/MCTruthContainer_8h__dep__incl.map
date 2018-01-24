@@ -1,0 +1,59 @@
+<map id="/home/travis/build/AliceO2Group/AliceO2/DataFormats/simulation/include/SimulationDataFormat/MCTruthContainer.h" name="/home/travis/build/AliceO2Group/AliceO2/DataFormats/simulation/include/SimulationDataFormat/MCTruthContainer.h">
+<area shape="rect" id="node2" href="$d5/d84/testMCTruthContainer_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/DataFormats/simulation\l/test/testMCTruthContainer.cxx" alt="" coords="5,146,211,217"/>
+<area shape="rect" id="node3" href="$dc/def/Helpers_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/DataFormats/TPC/src/Helpers.cxx" alt="" coords="236,153,465,209"/>
+<area shape="rect" id="node4" href="$d3/d41/Clusterer_8cxx.html" title="Implementation of the ITS cluster finder. " alt="" coords="490,146,701,217"/>
+<area shape="rect" id="node5" href="$de/d32/ITS_2macros_2test_2CheckClusters_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/ITSMFT/ITS\l/macros/test/CheckClusters.C" alt="" coords="725,146,924,217"/>
+<area shape="rect" id="node6" href="$dc/df8/CheckTracks_8C.html" title="Simple macro to check ITSU tracks. " alt="" coords="950,146,1140,217"/>
+<area shape="rect" id="node7" href="$d5/df6/DisplayTrack_8C.html" title="Simple macro to display ITSU tracks. " alt="" coords="1165,146,1355,217"/>
+<area shape="rect" id="node8" href="$d8/d95/ITSMFT_2ITS_2reconstruction_2src_2ClustererTask_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/ITSMFT/ITS\l/reconstruction/src/ClustererTask.cxx" alt="" coords="1379,146,1620,217"/>
+<area shape="rect" id="node9" href="$d7/dca/CookedTracker_8cxx.html" title="Implementation of the &quot;Cooked Matrix&quot; ITS tracker. " alt="" coords="1645,146,1892,217"/>
+<area shape="rect" id="node10" href="$d5/da2/CookedTrackerTask_8cxx.html" title="Implementation of the ITS &quot;Cooked Matrix&quot; tracker task. " alt="" coords="1917,139,2139,224"/>
+<area shape="rect" id="node11" href="$d5/d89/TrivialClusterer_8cxx.html" title="Implementation of the ITS cluster finder. " alt="" coords="2163,146,2409,217"/>
+<area shape="rect" id="node12" href="$dd/d81/TrivialClustererTask_8cxx.html" title="Implementation of the ITS cluster finder task. " alt="" coords="2434,139,2656,224"/>
+<area shape="rect" id="node13" href="$de/d0c/MFT_2macros_2CheckClusters_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/ITSMFT/MFT\l/macros/CheckClusters.C" alt="" coords="2681,146,2855,217"/>
+<area shape="rect" id="node14" href="$d9/d5e/ITSMFT_2MFT_2reconstruction_2src_2ClustererTask_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/ITSMFT/MFT\l/reconstruction/src/ClustererTask.cxx" alt="" coords="2879,146,3120,217"/>
+<area shape="rect" id="node15" href="$d0/d85/TOF_2simulation_2include_2TOFSimulation_2Digitizer_8h.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TOF/simulation\l/include/TOFSimulation/Digitizer.h" alt="" coords="3196,146,3417,217"/>
+<area shape="rect" id="node16" href="$d8/dc6/TOF_2simulation_2include_2TOFSimulation_2DigitizerTask_8h.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TOF/simulation\l/include/TOFSimulation/Digitizer\lTask.h" alt="" coords="2860,272,3069,357"/>
+<area shape="rect" id="node20" href="$d2/df8/BoxClusterer_8h.html" title="Class for TPC cluster finding. " alt="" coords="3405,272,3604,357"/>
+<area shape="rect" id="node21" href="$de/d64/TPC_2reconstruction_2include_2TPCReconstruction_2ClustererTask_8h.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/include/TPCReconstruction\l/ClustererTask.h" alt="" coords="3232,405,3431,491"/>
+<area shape="rect" id="node28" href="$db/db1/TPC_2reconstruction_2include_2TPCReconstruction_2Clusterer_8h.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/include/TPCReconstruction\l/Clusterer.h" alt="" coords="3543,139,3741,224"/>
+<area shape="rect" id="node29" href="$de/df6/HwClusterer_8h.html" title="Class for TPC HW cluster finding. " alt="" coords="3680,272,3879,357"/>
+<area shape="rect" id="node32" href="$d7/d3d/convertClusterToClusterHardware_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/macro/convertClusterToClusterHardware.C" alt="" coords="4117,146,4395,217"/>
+<area shape="rect" id="node33" href="$d4/d0e/readClusterMCtruth_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/macro/readClusterMCtruth.C" alt="" coords="4420,146,4619,217"/>
+<area shape="rect" id="node34" href="$d1/df0/runCATrackingClusterNative_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/macro/runCATrackingClusterNative.C" alt="" coords="4643,146,4889,217"/>
+<area shape="rect" id="node35" href="$dc/daf/runHardwareClusterDecoderRoot_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/macro/runHardwareClusterDecoderRoot.C" alt="" coords="4914,146,5187,217"/>
+<area shape="rect" id="node36" href="$d4/d7c/HardwareClusterDecoder_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/src/HardwareClusterDecoder.cxx" alt="" coords="5211,146,5431,217"/>
+<area shape="rect" id="node37" href="$d8/ded/TPCCATracking_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/src/TPCCATracking.cxx" alt="" coords="5456,146,5655,217"/>
+<area shape="rect" id="node38" href="$dd/d4b/TPC_2simulation_2include_2TPCSimulation_2DigitizerTask_8h.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/simulation\l/include/TPCSimulation/Digitizer\lTask.h" alt="" coords="3944,899,4153,984"/>
+<area shape="rect" id="node42" href="$d3/d5d/DigitPad_8h.html" title="Definition of the Pad container. " alt="" coords="3868,146,4091,217"/>
+<area shape="rect" id="node58" href="$d4/d77/CheckClusters__mft_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/macro/CheckClusters_mft.C" alt="" coords="5681,153,5873,209"/>
+<area shape="rect" id="node19" href="$d4/df3/TOF_2simulation_2src_2Digitizer_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TOF/simulation\l/src/Digitizer.cxx" alt="" coords="3155,279,3331,350"/>
+<area shape="rect" id="node17" href="$dd/df3/TOF_2simulation_2src_2DigitizerTask_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TOF/simulation\l/src/DigitizerTask.cxx" alt="" coords="2627,413,2803,483"/>
+<area shape="rect" id="node18" href="$db/d79/run__digi__tof_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/macro/run_digi_tof.C" alt="" coords="2827,420,2984,476"/>
+<area shape="rect" id="node25" href="$d5/db8/RawClusterFinder_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/macro/RawClusterFinder.C" alt="" coords="3456,413,3655,483"/>
+<area shape="rect" id="node27" href="$da/d67/BoxClusterer_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/src/BoxClusterer.cxx" alt="" coords="3008,413,3207,483"/>
+<area shape="rect" id="node22" href="$d8/d0f/TPC_2reconstruction_2src_2ClustererTask_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/src/ClustererTask.cxx" alt="" coords="3207,539,3405,610"/>
+<area shape="rect" id="node23" href="$df/d9b/run__clus__tpc_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/macro/run_clus_tpc.C" alt="" coords="3399,667,3556,723"/>
+<area shape="rect" id="node24" href="$d3/d56/runTPC_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/run/runTPC.cxx" alt="" coords="3643,1152,3800,1208"/>
+<area shape="rect" id="node26" href="$df/da0/runRawClusterFinder_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/macro/runRawClusterFinder.C" alt="" coords="3481,539,3684,610"/>
+<area shape="rect" id="node30" href="$dc/dc3/testClustererData_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/macro/testClustererData.C" alt="" coords="3680,413,3879,483"/>
+<area shape="rect" id="node31" href="$d4/d6c/HwClusterer_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/src/HwClusterer.cxx" alt="" coords="3904,413,4103,483"/>
+<area shape="rect" id="node39" href="$df/d46/TPC_2simulation_2src_2DigitizerTask_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/simulation\l/src/DigitizerTask.cxx" alt="" coords="4129,1033,4305,1103"/>
+<area shape="rect" id="node40" href="$d7/d11/macro_2run__digi_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/macro/run_digi.C" alt="" coords="3947,1040,4104,1096"/>
+<area shape="rect" id="node41" href="$d3/db7/run__digi__tpc_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/macro/run_digi_tpc.C" alt="" coords="3733,1040,3891,1096"/>
+<area shape="rect" id="node43" href="$de/dc8/DigitRow_8h.html" title="Definition of the Row container. " alt="" coords="4231,279,4459,350"/>
+<area shape="rect" id="node56" href="$d2/daa/DigitRow_8cxx.html" title="Implementation of the Row container. " alt="" coords="4523,413,4700,483"/>
+<area shape="rect" id="node57" href="$db/d73/DigitPad_8cxx.html" title="Implementation of the Pad container. " alt="" coords="3955,279,4132,350"/>
+<area shape="rect" id="node44" href="$d0/d60/DigitTime_8h.html" title="Definition of the Time Bin container. " alt="" coords="4269,413,4499,483"/>
+<area shape="rect" id="node55" href="$dd/dcd/DigitTime_8cxx.html" title="Implementation of the Time Bin container. " alt="" coords="4179,539,4356,610"/>
+<area shape="rect" id="node45" href="$d6/d95/DigitCRU_8h.html" title="Definition of the CRU container. " alt="" coords="4381,539,4611,610"/>
+<area shape="rect" id="node54" href="$da/dc3/DigitCRU_8cxx.html" title="Implementation of the CRU container. " alt="" coords="4626,659,4803,730"/>
+<area shape="rect" id="node46" href="$dd/d94/DigitContainer_8h.html" title="Definition of the Digit Container. " alt="" coords="4345,659,4601,730"/>
+<area shape="rect" id="node47" href="$de/d92/TPC_2simulation_2include_2TPCSimulation_2Digitizer_8h.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/simulation\l/include/TPCSimulation/Digitizer.h" alt="" coords="4362,779,4584,850"/>
+<area shape="rect" id="node52" href="$df/d53/DigitContainer_8cxx.html" title="Implementation of the Digit Container. " alt="" coords="4609,779,4785,850"/>
+<area shape="rect" id="node53" href="$dd/d5e/testTPCDigitContainer_8cxx.html" title="This task tests the DigitContainer of the TPC digitization. " alt="" coords="4810,779,5019,850"/>
+<area shape="rect" id="node48" href="$db/d60/testTracks_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/reconstruction\l/macro/testTracks.C" alt="" coords="4229,906,4428,977"/>
+<area shape="rect" id="node49" href="$d9/d59/testHitsDigitsClusters_8C.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/simulation\l/macro/testHitsDigitsClusters.C" alt="" coords="4454,906,4663,977"/>
+<area shape="rect" id="node50" href="$d7/d0a/TPC_2simulation_2src_2Digitizer_8cxx.html" title="/home/travis/build\l/AliceO2Group/AliceO2\l/Detectors/TPC/simulation\l/src/Digitizer.cxx" alt="" coords="4687,906,4864,977"/>
+<area shape="rect" id="node51" href="$d1/dd8/SAMPAProcessing_8cxx.html" title="Implementation of the SAMPA response. " alt="" coords="4889,906,5073,977"/>
+</map>

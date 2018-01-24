@@ -1,0 +1,12 @@
+digraph "/home/travis/build/AliceO2Group/AliceO2/DataFormats/TPC/test" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ca8d7a97db1fcc83aa37982b02bd5e83 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="TPC" fontname="Helvetica", fontsize="10", URL="dir_ca8d7a97db1fcc83aa37982b02bd5e83.html"]
+  dir_ee81f99d2d7e4d661d6f5cc0ceac084b [shape=box, label="test", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ee81f99d2d7e4d661d6f5cc0ceac084b.html"];
+  }
+  dir_432cf3cd730893300bc75d692afc5547 [shape=box label="include" color="red" URL="dir_432cf3cd730893300bc75d692afc5547.html"];
+  dir_ee81f99d2d7e4d661d6f5cc0ceac084b->dir_432cf3cd730893300bc75d692afc5547 [headlabel="1", labeldistance=1.5 headhref="dir_000071_000068.html"];
+}
