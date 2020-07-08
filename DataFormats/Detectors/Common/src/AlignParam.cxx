@@ -99,13 +99,15 @@ bool AlignParam::setRotation(const TGeoMatrix& m)
   /// passed as argument
 
   if (m.IsRotation()) {
+    // LOG(INFO) << "IsRotation!";
     const double* rot = m.GetRotationMatrix();
     double psi, theta, phi;
     if (!matrixToAngles(rot, psi, theta, phi)) {
       return false;
-      setRotation(psi, theta, phi);
     }
+    setRotation(psi, theta, phi);
   } else {
+    LOG(INFO) << "No Rotation!";
     mPsi = mTheta = mPhi = 0.;
   }
   return true;
@@ -153,12 +155,15 @@ bool AlignParam::setLocalParams(const TGeoMatrix& m)
   // In case that the TGeo was not initialized or not closed,
   // returns false and the object parameters are not set.
   //
+  // LOG(INFO) << "Got in here!";
+
   if (!gGeoManager || !gGeoManager->IsClosed()) {
     LOG(ERROR) << "Can't set the local alignment object parameters! gGeoManager doesn't exist or it is still open!";
     return false;
   }
-
+  // LOG(INFO) << "Got and here!";
   const char* symname = getSymName();
+  // LOG(INFO) << "This is symName " << symname;
   TGeoHMatrix gprime, gprimeinv;
   TGeoPhysicalNode* pn = nullptr;
   TGeoPNEntry* pne = gGeoManager->GetAlignableEntry(symname);
@@ -181,7 +186,7 @@ bool AlignParam::setLocalParams(const TGeoMatrix& m)
     }
     gprime = *gGeoManager->GetCurrentMatrix();
   }
-
+  // LOG(INFO) << "Got and also here!";
   TGeoHMatrix m1; // the TGeoHMatrix copy of the local delta "m"
   m1.SetTranslation(m.GetTranslation());
   m1.SetRotation(m.GetRotationMatrix());
@@ -189,8 +194,8 @@ bool AlignParam::setLocalParams(const TGeoMatrix& m)
   gprimeinv = gprime.Inverse();
   m1.Multiply(&gprimeinv);
   m1.MultiplyLeft(&gprime);
-
-  return setLocalParams(m1);
+  setParams(m1);
+  return true;
 }
 
 //_____________________________________________________________________________
