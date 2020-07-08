@@ -12,6 +12,7 @@ o2_add_library(MCHSimulation
                SOURCES src/Detector.cxx
                        src/Digitizer.cxx
                        src/Geometry.cxx
+                       src/GeometryMisAligner.cxx
                        src/GeometryTest.cxx
                        src/Hit.cxx
                        src/Materials.cxx
@@ -34,6 +35,7 @@ o2_target_root_dictionary(MCHSimulation
                           HEADERS include/MCHSimulation/Detector.h
                                   include/MCHSimulation/Digitizer.h
                                   include/MCHSimulation/Geometry.h
+                                  include/MCHSimulation/GeometryMisAligner.h
                                   include/MCHSimulation/GeometryTest.h
                                   include/MCHSimulation/Hit.h
                                   include/MCHSimulation/Response.h)

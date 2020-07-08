@@ -35,6 +35,8 @@ void createRegularGeometry();
 /// useull for tests.
 void addAlignableVolumes();
 
+void misAlignGeometry();
+
 /// tree like textual dump of the geometry nodes
 void showGeometryAsTextTree(const char* fromPath = "", int maxdepth = 2, std::ostream& out = std::cout);
 

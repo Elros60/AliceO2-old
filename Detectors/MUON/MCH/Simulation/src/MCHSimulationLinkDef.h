@@ -20,6 +20,7 @@
 
 #pragma link C++ class o2::mch::test::Dummy;
 #pragma link C++ class o2::mch::Detector + ;
+#pragma link C++ class o2::mch::GeometryMisAligner + ;
 #pragma link C++ class o2::mch::Hit + ;
 #pragma link C++ class std::vector < o2::mch::Hit> + ;
 #pragma link C++ class o2::base::DetImpl < o2::mch::Detector> + ;
@@ -31,6 +32,7 @@
 #pragma link C++ function o2::mch::test::addAlignableVolumes;
 #pragma link C++ function o2::mch::test::createStandaloneGeometry;
 #pragma link C++ function o2::mch::test::createRegularGeometry;
+#pragma link C++ function o2::mch::test::misAlignGeometry;
 #pragma link C++ function o2::mch::test::drawGeometry;
 #pragma link C++ function o2::mch::test::getRadio;
 #pragma link C++ function o2::mch::test::showGeometryAsTextTree;

@@ -558,12 +558,14 @@ void addAlignableVolumesHalfChamber(int hc, std::string& parent)
   for (int i = 0; i < DEofHC[hc].size(); i++) {
     std::string volPathName = impl::getVolumePathName(DEofHC[hc][i]);
 
-    TString path = Form("%s%s", parent.c_str(), volPathName.c_str());
-    TString sname = Form("MCH/HC%d/DE%d", hc, DEofHC[hc][i]);
+    std::string path = fmt::format("{0}{1}", parent.c_str(), volPathName.c_str());
+    std::string sname = fmt::format("MCH/HC{0}/DE{1}", hc, DEofHC[hc][i]);
+    // TString path = Form("%s%s", parent.c_str(), volPathName.c_str());
+    // TString sname = Form("MCH/HC%d/DE%d", hc, DEofHC[hc][i]);
 
     LOG(DEBUG) << "Add " << sname << " <-> " << path;
 
-    if (!gGeoManager->SetAlignableEntry(sname.Data(), path.Data()))
+    if (!gGeoManager->SetAlignableEntry(sname.c_str(), path.c_str()))
       LOG(FATAL) << "Unable to set alignable entry ! " << sname << " : " << path;
   }
 
