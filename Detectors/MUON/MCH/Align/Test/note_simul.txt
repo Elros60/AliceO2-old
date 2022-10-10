@@ -1,7 +1,7 @@
 // Notes for O2:MCH simulations:
 // README file could be found at O2/Detectors/MUON/MCH/Simulation/README.md for MCH simulations
 // README file could be found at O2/doc/DetectorSimulation.md for general O2 simulations
-
+========================================================================================
 // Hits generation:
 
 o2-sim -m MCH -n 10 -g fwmugen
@@ -15,7 +15,7 @@ output to be used:
 - geometry: o2sim_geometry.root o2sim_geometry-aligned.root
 
 
-
+========================================================================================
 // Digitization:
 
 o2-sim-digitizer-workflow
@@ -24,6 +24,7 @@ output to be used:
 - digits: mchdigits.root
 
 
+========================================================================================
 // Track reconstruction:
 
 o2-mch-reco-workflow
@@ -31,6 +32,14 @@ o2-mch-reco-workflow
 output to be used:
 - reconstructed tracks: mchtracks.root
 
+
+========================================================================================
+// CTF conversion:
+
+if only MCH being considered:
+o2-ctf-reader-workflow --ctf-input $HOME/alice/data/2022/MAY/517222/raw/1150 --onlyDet MCH --max-tf 10 | o2-mch-reco-workflow --disable-mc --disable-root-input --configKeyValues "MCHClustering.lowestPadCharge=20;MCHClustering.defaultClusterResolution=0.4;MCHTracking.chamberResolutionX=0.4;MCHTracking.chamberResolutionY=0.4;MCHTracking.sigmaCutForTracking=7;MCHTracking.sigmaCutForImprovement=6" | o2-dpl-run --run -b > reco.log
+
+(Dans cet exemple le répertoire $HOME/alice/data/2022/MAY/517222/raw/1150 contient plusieurs fichiers CTF dont seuls les 10 premiers TF sont lus via —max-tf 10). Il est aussi possible d’utiliser le o2-ctf-reader-workflow pour lire directement depuis alien mais c’est moins pratique. 
 
 
 
