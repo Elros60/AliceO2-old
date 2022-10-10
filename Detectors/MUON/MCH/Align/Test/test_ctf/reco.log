@@ -1,0 +1,548 @@
+[INFO] Initialising O2 Data Processing Layer. Driver PID: 67642.
+[INFO] Driver listening on port: 15722
+[INFO] Rate limiting set up at 500MB distributed over 1 readers
+[INFO] O2 Data Processing Layer initialised. We brake for nobody.
+[INFO] Optimised build. O2DEBUG / LOG(debug) / LOGF(debug) / assert statement will not be shown.
+[INFO] Redeployment of configuration asked.
+[INFO] Starting internal-dpl-clock on pid 67649
+[INFO] Starting ctf-reader on pid 67650
+[INFO] Starting internal-dpl-ccdb-backend on pid 67651
+[INFO] Starting mch-entropy-decoder on pid 67652
+[INFO] Starting mch-digit-filtering on pid 67653
+[INFO] Starting mch-time-cluster-finder on pid 67654
+[INFO] Starting mch-precluster-finder on pid 67655
+[INFO] Starting mch-cluster-finder on pid 67656
+[INFO] Starting mch-cluster-transformer on pid 67657
+[INFO] Starting mch-global-cluster-writer on pid 67658
+[INFO] Starting mch-track-finder on pid 67659
+[INFO] Starting internal-dpl-injected-dummy-sink on pid 67660
+[INFO] Starting mch-track-writer on pid 67661
+[INFO] Redeployment of configuration done.
+[67650:ctf-reader]: [INFO] Instrumenting crash signals
+[67650:ctf-reader]: [INFO] Spawing new device ctf-reader in process with pid 67650
+[67650:ctf-reader]: [16:42:30][INFO] 
+[67650:ctf-reader]:       ______      _    _______  _________ 
+[67650:ctf-reader]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.55
+[67650:ctf-reader]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[67650:ctf-reader]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[67650:ctf-reader]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2022 GSI
+[67650:ctf-reader]: 
+[67650:ctf-reader]: [16:42:30][STATE] Starting FairMQ state machine --> IDLE
+[67650:ctf-reader]: [16:42:30][STATE] IDLE ---> INITIALIZING DEVICE
+[67653:mch-digit-filtering]: [INFO] Instrumenting crash signals
+[67650:ctf-reader]: [16:42:30][INFO] Input contains 13 files, 0 remote
+[67650:ctf-reader]: [16:42:30][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[67653:mch-digit-filtering]: [INFO] Spawing new device mch-digit-filtering in process with pid 67653
+[67650:ctf-reader]: [16:42:30][STATE] INITIALIZED ---> BINDING
+[67653:mch-digit-filtering]: [16:42:30][INFO] 
+[67653:mch-digit-filtering]:       ______      _    _______  _________ 
+[67653:mch-digit-filtering]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.55
+[67653:mch-digit-filtering]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[67653:mch-digit-filtering]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[67653:mch-digit-filtering]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2022 GSI
+[67653:mch-digit-filtering]: 
+[67653:mch-digit-filtering]: [16:42:30][STATE] Starting FairMQ state machine --> IDLE
+[67650:ctf-reader]: [16:42:30][STATE] BINDING ---> BOUND
+[67653:mch-digit-filtering]: [16:42:30][STATE] IDLE ---> INITIALIZING DEVICE
+[67650:ctf-reader]: [16:42:30][STATE] BOUND ---> CONNECTING
+[67652:mch-entropy-decoder]: [INFO] Instrumenting crash signals
+[67653:mch-digit-filtering]: [16:42:30][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[67653:mch-digit-filtering]: [16:42:30][STATE] INITIALIZED ---> BINDING
+[67650:ctf-reader]: [16:42:30][STATE] CONNECTING ---> DEVICE READY
+[67653:mch-digit-filtering]: [16:42:30][STATE] BINDING ---> BOUND
+[67650:ctf-reader]: [16:42:30][STATE] DEVICE READY ---> INITIALIZING TASK
+[67653:mch-digit-filtering]: [16:42:30][STATE] BOUND ---> CONNECTING
+[67653:mch-digit-filtering]: [16:42:30][STATE] CONNECTING ---> DEVICE READY
+[67650:ctf-reader]: [16:42:30][STATE] INITIALIZING TASK ---> READY
+[67653:mch-digit-filtering]: [16:42:30][STATE] DEVICE READY ---> INITIALIZING TASK
+[67653:mch-digit-filtering]: [16:42:30][STATE] INITIALIZING TASK ---> READY
+[67650:ctf-reader]: [16:42:30][STATE] READY ---> RUNNING
+[67650:ctf-reader]: [16:42:30][INFO] fair::mq::Device running...
+[67653:mch-digit-filtering]: [16:42:30][STATE] READY ---> RUNNING
+[67653:mch-digit-filtering]: [16:42:30][INFO] fair::mq::Device running...
+[67650:ctf-reader]: [16:42:30][INFO] LHCPeriod is not available, using current month OCT
+[67650:ctf-reader]: [16:42:30][INFO] Reading CTF input  /Users/cz263673/alice/data/2022/MAY/517222/raw/1150/o2_ctf_run00517222_orbit2097512701_tf0000000001.root
+[67652:mch-entropy-decoder]: [INFO] Spawing new device mch-entropy-decoder in process with pid 67652
+[67652:mch-entropy-decoder]: [16:42:30][INFO] 
+[67652:mch-entropy-decoder]:       ______      _    _______  _________ 
+[67652:mch-entropy-decoder]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.55
+[67652:mch-entropy-decoder]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[67652:mch-entropy-decoder]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[67652:mch-entropy-decoder]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2022 GSI
+[67652:mch-entropy-decoder]: 
+[67652:mch-entropy-decoder]: [16:42:30][STATE] Starting FairMQ state machine --> IDLE
+[67653:mch-digit-filtering]: [16:42:30][INFO] LHCPeriod is not available, using current month OCT
+[67654:mch-time-cluster-finder]: [INFO] Instrumenting crash signals
+[67655:mch-precluster-finder]: [INFO] Instrumenting crash signals
+[67654:mch-time-cluster-finder]: [INFO] Spawing new device mch-time-cluster-finder in process with pid 67654
+[67654:mch-time-cluster-finder]: [16:42:30][INFO] 
+[67654:mch-time-cluster-finder]:       ______      _    _______  _________ 
+[67654:mch-time-cluster-finder]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.55
+[67654:mch-time-cluster-finder]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[67654:mch-time-cluster-finder]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[67654:mch-time-cluster-finder]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2022 GSI
+[67654:mch-time-cluster-finder]: 
+[67654:mch-time-cluster-finder]: [16:42:30][STATE] Starting FairMQ state machine --> IDLE
+[67655:mch-precluster-finder]: [INFO] Spawing new device mch-precluster-finder in process with pid 67655
+[67655:mch-precluster-finder]: [16:42:30][INFO] 
+[67655:mch-precluster-finder]:       ______      _    _______  _________ 
+[67655:mch-precluster-finder]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.55
+[67655:mch-precluster-finder]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[67655:mch-precluster-finder]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[67655:mch-precluster-finder]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2022 GSI
+[67655:mch-precluster-finder]: 
+[67655:mch-precluster-finder]: [16:42:30][STATE] Starting FairMQ state machine --> IDLE
+[67652:mch-entropy-decoder]: [16:42:30][STATE] IDLE ---> INITIALIZING DEVICE
+[67654:mch-time-cluster-finder]: [16:42:30][STATE] IDLE ---> INITIALIZING DEVICE
+[67655:mch-precluster-finder]: [16:42:30][STATE] IDLE ---> INITIALIZING DEVICE
+[67654:mch-time-cluster-finder]: [16:42:30][INFO] TimeClusterWidth      : 40
+[67654:mch-time-cluster-finder]: [16:42:30][INFO] BinsInOneWindow       : 5 
+[67654:mch-time-cluster-finder]: [16:42:30][INFO] MinDigitPerROF        : 0
+[67654:mch-time-cluster-finder]: [16:42:30][INFO] OnlyTrackable         : true
+[67654:mch-time-cluster-finder]: [16:42:30][INFO] PeakSearchSignalOnly  : true
+[67654:mch-time-cluster-finder]: [16:42:30][INFO] IRFramesOnly          : false
+[67654:mch-time-cluster-finder]: [16:42:30][INFO] ROFRejectionFraction  : 0
+[67655:mch-precluster-finder]: [16:42:30][INFO] initializing preclusterizer
+[67654:mch-time-cluster-finder]: [16:42:30][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[67652:mch-entropy-decoder]: [16:42:30][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[67654:mch-time-cluster-finder]: [16:42:30][STATE] INITIALIZED ---> BINDING
+[67652:mch-entropy-decoder]: [16:42:30][STATE] INITIALIZED ---> BINDING
+[67656:mch-cluster-finder]: [INFO] Instrumenting crash signals
+[67654:mch-time-cluster-finder]: [16:42:30][STATE] BINDING ---> BOUND
+[67656:mch-cluster-finder]: [INFO] Spawing new device mch-cluster-finder in process with pid 67656
+[67656:mch-cluster-finder]: [16:42:30][INFO] 
+[67656:mch-cluster-finder]:       ______      _    _______  _________ 
+[67656:mch-cluster-finder]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.55
+[67656:mch-cluster-finder]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[67656:mch-cluster-finder]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[67656:mch-cluster-finder]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2022 GSI
+[67656:mch-cluster-finder]: 
+[67657:mch-cluster-transformer]: [INFO] Instrumenting crash signals
+[67656:mch-cluster-finder]: [16:42:30][STATE] Starting FairMQ state machine --> IDLE
+[67654:mch-time-cluster-finder]: [16:42:30][STATE] BOUND ---> CONNECTING
+[67652:mch-entropy-decoder]: [16:42:30][STATE] BINDING ---> BOUND
+[67656:mch-cluster-finder]: [16:42:30][STATE] IDLE ---> INITIALIZING DEVICE
+[67657:mch-cluster-transformer]: [INFO] Spawing new device mch-cluster-transformer in process with pid 67657
+[67657:mch-cluster-transformer]: [16:42:30][INFO] 
+[67657:mch-cluster-transformer]:       ______      _    _______  _________ 
+[67657:mch-cluster-transformer]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.55
+[67657:mch-cluster-transformer]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[67657:mch-cluster-transformer]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[67657:mch-cluster-transformer]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2022 GSI
+[67657:mch-cluster-transformer]: 
+[67654:mch-time-cluster-finder]: [16:42:30][STATE] CONNECTING ---> DEVICE READY
+[67657:mch-cluster-transformer]: [16:42:30][STATE] Starting FairMQ state machine --> IDLE
+[67652:mch-entropy-decoder]: [16:42:30][STATE] BOUND ---> CONNECTING
+[67656:mch-cluster-finder]: [16:42:30][INFO] initializing cluster finder
+[67658:mch-global-cluster-writer]: [INFO] Instrumenting crash signals
+[67654:mch-time-cluster-finder]: [16:42:30][STATE] DEVICE READY ---> INITIALIZING TASK
+[67657:mch-cluster-transformer]: [16:42:30][STATE] IDLE ---> INITIALIZING DEVICE
+[67658:mch-global-cluster-writer]: [INFO] Spawing new device mch-global-cluster-writer in process with pid 67658
+[67658:mch-global-cluster-writer]: [16:42:30][INFO] 
+[67658:mch-global-cluster-writer]:       ______      _    _______  _________ 
+[67658:mch-global-cluster-writer]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.55
+[67658:mch-global-cluster-writer]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[67658:mch-global-cluster-writer]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[67658:mch-global-cluster-writer]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2022 GSI
+[67658:mch-global-cluster-writer]: 
+[67658:mch-global-cluster-writer]: [16:42:30][STATE] Starting FairMQ state machine --> IDLE
+[67659:mch-track-finder]: [INFO] Instrumenting crash signals
+[67654:mch-time-cluster-finder]: [16:42:30][STATE] INITIALIZING TASK ---> READY
+[67657:mch-cluster-transformer]: [16:42:30][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[67658:mch-global-cluster-writer]: [16:42:30][STATE] IDLE ---> INITIALIZING DEVICE
+[67659:mch-track-finder]: [INFO] Spawing new device mch-track-finder in process with pid 67659
+[67659:mch-track-finder]: [16:42:30][INFO] 
+[67659:mch-track-finder]:       ______      _    _______  _________ 
+[67659:mch-track-finder]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.55
+[67659:mch-track-finder]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[67659:mch-track-finder]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[67659:mch-track-finder]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2022 GSI
+[67659:mch-track-finder]: 
+[67659:mch-track-finder]: [16:42:30][STATE] Starting FairMQ state machine --> IDLE
+[67649:internal-dpl-clock]: [INFO] Instrumenting crash signals
+[67654:mch-time-cluster-finder]: [16:42:30][STATE] READY ---> RUNNING
+[67654:mch-time-cluster-finder]: [16:42:30][INFO] fair::mq::Device running...
+[67657:mch-cluster-transformer]: [16:42:30][STATE] INITIALIZED ---> BINDING
+[67659:mch-track-finder]: [16:42:30][STATE] IDLE ---> INITIALIZING DEVICE
+[67652:mch-entropy-decoder]: [16:42:30][STATE] CONNECTING ---> DEVICE READY
+[67654:mch-time-cluster-finder]: [16:42:30][INFO] LHCPeriod is not available, using current month OCT
+[67652:mch-entropy-decoder]: [16:42:30][STATE] DEVICE READY ---> INITIALIZING TASK
+[67657:mch-cluster-transformer]: [16:42:30][STATE] BINDING ---> BOUND
+[67659:mch-track-finder]: [16:42:30][INFO] initializing track finder
+[67660:internal-dpl-injected-dummy-sink]: [INFO] Instrumenting crash signals
+[67657:mch-cluster-transformer]: [16:42:30][STATE] BOUND ---> CONNECTING
+[67649:internal-dpl-clock]: [INFO] Spawing new device internal-dpl-clock in process with pid 67649
+[67652:mch-entropy-decoder]: [16:42:30][STATE] INITIALIZING TASK ---> READY
+[67649:internal-dpl-clock]: [16:42:30][INFO] 
+[67649:internal-dpl-clock]:       ______      _    _______  _________ 
+[67649:internal-dpl-clock]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.55
+[67649:internal-dpl-clock]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[67649:internal-dpl-clock]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[67649:internal-dpl-clock]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2022 GSI
+[67649:internal-dpl-clock]: 
+[67649:internal-dpl-clock]: [16:42:30][STATE] Starting FairMQ state machine --> IDLE
+[67652:mch-entropy-decoder]: [16:42:30][STATE] READY ---> RUNNING
+[67652:mch-entropy-decoder]: [16:42:30][INFO] fair::mq::Device running...
+[67658:mch-global-cluster-writer]: [16:42:30][INFO] 0: branch  clusters set up
+[67652:mch-entropy-decoder]: [16:42:30][INFO] LHCPeriod is not available, using current month OCT
+[67658:mch-global-cluster-writer]: [16:42:30][INFO] 1: branch  clusterrofs set up
+[67657:mch-cluster-transformer]: [16:42:30][STATE] CONNECTING ---> DEVICE READY
+[67657:mch-cluster-transformer]: [16:42:30][STATE] DEVICE READY ---> INITIALIZING TASK
+[67658:mch-global-cluster-writer]: [16:42:30][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[67658:mch-global-cluster-writer]: [16:42:30][STATE] INITIALIZED ---> BINDING
+[67657:mch-cluster-transformer]: [16:42:30][STATE] INITIALIZING TASK ---> READY
+[67657:mch-cluster-transformer]: [16:42:30][STATE] READY ---> RUNNING
+[67657:mch-cluster-transformer]: [16:42:30][INFO] fair::mq::Device running...
+[67658:mch-global-cluster-writer]: [16:42:30][STATE] BINDING ---> BOUND
+[67658:mch-global-cluster-writer]: [16:42:30][STATE] BOUND ---> CONNECTING
+[67658:mch-global-cluster-writer]: [16:42:30][STATE] CONNECTING ---> DEVICE READY
+[67658:mch-global-cluster-writer]: [16:42:30][STATE] DEVICE READY ---> INITIALIZING TASK
+[67658:mch-global-cluster-writer]: [16:42:30][STATE] INITIALIZING TASK ---> READY
+[67658:mch-global-cluster-writer]: [16:42:30][STATE] READY ---> RUNNING
+[67658:mch-global-cluster-writer]: [16:42:30][INFO] fair::mq::Device running...
+[67660:internal-dpl-injected-dummy-sink]: [INFO] Spawing new device internal-dpl-injected-dummy-sink in process with pid 67660
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][INFO] 
+[67660:internal-dpl-injected-dummy-sink]:       ______      _    _______  _________ 
+[67660:internal-dpl-injected-dummy-sink]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.55
+[67660:internal-dpl-injected-dummy-sink]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[67660:internal-dpl-injected-dummy-sink]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[67660:internal-dpl-injected-dummy-sink]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2022 GSI
+[67660:internal-dpl-injected-dummy-sink]: 
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][STATE] Starting FairMQ state machine --> IDLE
+[67649:internal-dpl-clock]: [16:42:30][STATE] IDLE ---> INITIALIZING DEVICE
+[67657:mch-cluster-transformer]: [16:42:30][INFO] LHCPeriod is not available, using current month OCT
+[67658:mch-global-cluster-writer]: [16:42:30][INFO] LHCPeriod is not available, using current month OCT
+[67661:mch-track-writer]: [INFO] Instrumenting crash signals
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][STATE] IDLE ---> INITIALIZING DEVICE
+[67649:internal-dpl-clock]: [16:42:30][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[67649:internal-dpl-clock]: [16:42:30][STATE] INITIALIZED ---> BINDING
+[67649:internal-dpl-clock]: [16:42:30][STATE] BINDING ---> BOUND
+[67649:internal-dpl-clock]: [16:42:30][STATE] BOUND ---> CONNECTING
+[67649:internal-dpl-clock]: [16:42:30][STATE] CONNECTING ---> DEVICE READY
+[67649:internal-dpl-clock]: [16:42:30][STATE] DEVICE READY ---> INITIALIZING TASK
+[67649:internal-dpl-clock]: [16:42:30][STATE] INITIALIZING TASK ---> READY
+[67649:internal-dpl-clock]: [16:42:30][STATE] READY ---> RUNNING
+[67649:internal-dpl-clock]: [16:42:30][INFO] fair::mq::Device running...
+[67649:internal-dpl-clock]: [16:42:30][INFO] LHCPeriod is not available, using current month OCT
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][STATE] INITIALIZED ---> BINDING
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][STATE] BINDING ---> BOUND
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][STATE] BOUND ---> CONNECTING
+[67661:mch-track-writer]: [INFO] Spawing new device mch-track-writer in process with pid 67661
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][STATE] CONNECTING ---> DEVICE READY
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][STATE] DEVICE READY ---> INITIALIZING TASK
+[67661:mch-track-writer]: [16:42:30][INFO] 
+[67661:mch-track-writer]:       ______      _    _______  _________ 
+[67661:mch-track-writer]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.55
+[67661:mch-track-writer]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[67661:mch-track-writer]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[67661:mch-track-writer]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2022 GSI
+[67661:mch-track-writer]: 
+[67661:mch-track-writer]: [16:42:30][STATE] Starting FairMQ state machine --> IDLE
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][STATE] INITIALIZING TASK ---> READY
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][STATE] READY ---> RUNNING
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][INFO] fair::mq::Device running...
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][INFO] LHCPeriod is not available, using current month OCT
+[67661:mch-track-writer]: [16:42:30][STATE] IDLE ---> INITIALIZING DEVICE
+[67653:mch-digit-filtering]: [16:42:30][INFO] Correctly handshaken websocket connection.
+[67651:internal-dpl-ccdb-backend]: [INFO] Instrumenting crash signals
+[67651:internal-dpl-ccdb-backend]: [INFO] Spawing new device internal-dpl-ccdb-backend in process with pid 67651
+[67651:internal-dpl-ccdb-backend]: [16:42:30][INFO] 
+[67651:internal-dpl-ccdb-backend]:       ______      _    _______  _________ 
+[67651:internal-dpl-ccdb-backend]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.55
+[67651:internal-dpl-ccdb-backend]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[67651:internal-dpl-ccdb-backend]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[67651:internal-dpl-ccdb-backend]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2022 GSI
+[67651:internal-dpl-ccdb-backend]: 
+[67651:internal-dpl-ccdb-backend]: [16:42:30][STATE] Starting FairMQ state machine --> IDLE
+[67651:internal-dpl-ccdb-backend]: [16:42:30][STATE] IDLE ---> INITIALIZING DEVICE
+[67651:internal-dpl-ccdb-backend]: [16:42:30][INFO] CCDB Backend at: https://alice-ccdb.cern.ch, validity check for every 18446744073709551615 TF
+[67651:internal-dpl-ccdb-backend]: [16:42:30][INFO] Init CcdApi with UserAgentID: dphnmct93-1665412950-5PN2qm, Host: https://alice-ccdb.cern.ch
+[67651:internal-dpl-ccdb-backend]: [16:42:30][INFO] Initialised default CCDB host https://alice-ccdb.cern.ch
+[67651:internal-dpl-ccdb-backend]: [16:42:30][INFO] The following route is a condition  { MCH/CTFDICT/0}
+[67651:internal-dpl-ccdb-backend]: [16:42:30][INFO] - ccdb-path: MCH/Calib/CTFDictionary
+[67651:internal-dpl-ccdb-backend]: [16:42:30][INFO] The following route is a condition  { GLO/GEOMALIGN/0}
+[67651:internal-dpl-ccdb-backend]: [16:42:30][INFO] - ccdb-path: GLO/Config/GeometryAligned
+[67651:internal-dpl-ccdb-backend]: [16:42:30][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[67651:internal-dpl-ccdb-backend]: [16:42:30][STATE] INITIALIZED ---> BINDING
+[67651:internal-dpl-ccdb-backend]: [16:42:30][STATE] BINDING ---> BOUND
+[67651:internal-dpl-ccdb-backend]: [16:42:30][STATE] BOUND ---> CONNECTING
+[67651:internal-dpl-ccdb-backend]: [16:42:30][STATE] CONNECTING ---> DEVICE READY
+[67651:internal-dpl-ccdb-backend]: [16:42:30][STATE] DEVICE READY ---> INITIALIZING TASK
+[67651:internal-dpl-ccdb-backend]: [16:42:30][STATE] INITIALIZING TASK ---> READY
+[67651:internal-dpl-ccdb-backend]: [16:42:30][STATE] READY ---> RUNNING
+[67651:internal-dpl-ccdb-backend]: [16:42:30][INFO] fair::mq::Device running...
+[67651:internal-dpl-ccdb-backend]: [16:42:30][INFO] LHCPeriod is not available, using current month OCT
+[67661:mch-track-writer]: [16:42:30][INFO] 0: branch  tracks set up
+[67661:mch-track-writer]: [16:42:30][INFO] 1: branch  trackrofs set up
+[67661:mch-track-writer]: [16:42:30][INFO] 2: branch  trackclusters set up
+[67661:mch-track-writer]: [16:42:30][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[67661:mch-track-writer]: [16:42:30][STATE] INITIALIZED ---> BINDING
+[67661:mch-track-writer]: [16:42:30][STATE] BINDING ---> BOUND
+[67661:mch-track-writer]: [16:42:30][STATE] BOUND ---> CONNECTING
+[67661:mch-track-writer]: [16:42:30][STATE] CONNECTING ---> DEVICE READY
+[67661:mch-track-writer]: [16:42:30][STATE] DEVICE READY ---> INITIALIZING TASK
+[67661:mch-track-writer]: [16:42:30][STATE] INITIALIZING TASK ---> READY
+[67661:mch-track-writer]: [16:42:30][STATE] READY ---> RUNNING
+[67661:mch-track-writer]: [16:42:30][INFO] fair::mq::Device running...
+[67661:mch-track-writer]: [16:42:30][INFO] LHCPeriod is not available, using current month OCT
+[67652:mch-entropy-decoder]: [16:42:30][INFO] Correctly handshaken websocket connection.
+[67654:mch-time-cluster-finder]: [16:42:30][INFO] Correctly handshaken websocket connection.
+[67657:mch-cluster-transformer]: [16:42:30][INFO] Correctly handshaken websocket connection.
+[67658:mch-global-cluster-writer]: [16:42:30][INFO] Correctly handshaken websocket connection.
+[67649:internal-dpl-clock]: [16:42:30][INFO] Correctly handshaken websocket connection.
+[67660:internal-dpl-injected-dummy-sink]: [16:42:30][INFO] Correctly handshaken websocket connection.
+[67661:mch-track-writer]: [16:42:30][INFO] Correctly handshaken websocket connection.
+[67651:internal-dpl-ccdb-backend]: [16:42:30][INFO] Correctly handshaken websocket connection.
+[67659:mch-track-finder]: [16:42:30][INFO] MagneticField::Print: MagneticFieldMap:
+[67659:mch-track-finder]: [16:42:30][INFO] MagneticField::Print: Solenoid (-1*)5 kG, Dipole ON (-1) 
+[67659:mch-track-finder]: [16:42:30][INFO] MagneticField::Print: Machine B fields for A-A  beam (3500 GeV): QGrad: 27.9027 Dipole: 48.0405
+[67659:mch-track-finder]: [16:42:30][INFO] MagneticField::Print: Uses Sol30_Dip6_Hole  of $(O2_ROOT)/share/Common/maps/mfchebKGI_sym.root
+[67659:mch-track-finder]: Info in <TGeoGlobalMagField::SetField>: Global magnetic field set to <MagneticFieldMap>
+[67659:mch-track-finder]: Info in <TGeoGlobalMagField::Lock>: Global magnetic field <MagneticFieldMap> is now locked
+[67659:mch-track-finder]: [16:42:30][INFO] Track extrapolation with magnetic field ON
+[67659:mch-track-finder]: [16:42:30][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[67659:mch-track-finder]: [16:42:30][STATE] INITIALIZED ---> BINDING
+[67659:mch-track-finder]: [16:42:30][STATE] BINDING ---> BOUND
+[67659:mch-track-finder]: [16:42:30][STATE] BOUND ---> CONNECTING
+[67659:mch-track-finder]: [16:42:30][STATE] CONNECTING ---> DEVICE READY
+[67659:mch-track-finder]: [16:42:30][STATE] DEVICE READY ---> INITIALIZING TASK
+[67659:mch-track-finder]: [16:42:30][STATE] INITIALIZING TASK ---> READY
+[67659:mch-track-finder]: [16:42:30][STATE] READY ---> RUNNING
+[67659:mch-track-finder]: [16:42:30][INFO] fair::mq::Device running...
+[67659:mch-track-finder]: [16:42:30][INFO] LHCPeriod is not available, using current month OCT
+[67659:mch-track-finder]: [16:42:30][INFO] Correctly handshaken websocket connection.
+[67655:mch-precluster-finder]: [16:42:31][INFO] create mapping in: 781.929 ms
+[67655:mch-precluster-finder]: [16:42:31][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[67655:mch-precluster-finder]: [16:42:31][STATE] INITIALIZED ---> BINDING
+[67655:mch-precluster-finder]: [16:42:31][STATE] BINDING ---> BOUND
+[67655:mch-precluster-finder]: [16:42:31][STATE] BOUND ---> CONNECTING
+[67655:mch-precluster-finder]: [16:42:31][STATE] CONNECTING ---> DEVICE READY
+[67655:mch-precluster-finder]: [16:42:31][STATE] DEVICE READY ---> INITIALIZING TASK
+[67655:mch-precluster-finder]: [16:42:31][STATE] INITIALIZING TASK ---> READY
+[67655:mch-precluster-finder]: [16:42:31][STATE] READY ---> RUNNING
+[67655:mch-precluster-finder]: [16:42:31][INFO] fair::mq::Device running...
+[67655:mch-precluster-finder]: [16:42:31][INFO] LHCPeriod is not available, using current month OCT
+[67655:mch-precluster-finder]: [16:42:31][INFO] Correctly handshaken websocket connection.
+[67656:mch-cluster-finder]: [16:42:31][INFO] create mapping in: 799.995 ms
+[67656:mch-cluster-finder]: [16:42:31][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[67656:mch-cluster-finder]: [16:42:31][STATE] INITIALIZED ---> BINDING
+[67656:mch-cluster-finder]: [16:42:31][STATE] BINDING ---> BOUND
+[67656:mch-cluster-finder]: [16:42:31][STATE] BOUND ---> CONNECTING
+[67656:mch-cluster-finder]: [16:42:31][STATE] CONNECTING ---> DEVICE READY
+[67656:mch-cluster-finder]: [16:42:31][STATE] DEVICE READY ---> INITIALIZING TASK
+[67656:mch-cluster-finder]: [16:42:31][STATE] INITIALIZING TASK ---> READY
+[67656:mch-cluster-finder]: [16:42:31][STATE] READY ---> RUNNING
+[67656:mch-cluster-finder]: [16:42:31][INFO] fair::mq::Device running...
+[67656:mch-cluster-finder]: [16:42:31][INFO] LHCPeriod is not available, using current month OCT
+[67656:mch-cluster-finder]: [16:42:31][INFO] Correctly handshaken websocket connection.
+[67650:ctf-reader]: [16:42:31][INFO] Run:0517222 TF:1 Orbit:2097512701 CteationTime:1653817434417 Detectors: ITS,TPC,TRD,TOF,PHS,CPV,EMC,MFT,MCH,MID,FT0,FV0
+[67650:ctf-reader]: [16:42:33][INFO] Read CTF 0 (0 of 177 in /Users/cz263673/alice/data/2022/MAY/517222/raw/1150/o2_ctf_run00517222_orbit2097512701_tf0000000001.root) in 1.060 s, 0.0000 s elapsed from previous CTF
+[67650:ctf-reader]: [16:42:33][INFO] Correctly handshaken websocket connection.
+[67650:ctf-reader]: [16:42:33][INFO] Run:0517222 TF:371 Orbit:2097560061 CteationTime:1653817438627 Detectors: ITS,TPC,TRD,TOF,PHS,CPV,EMC,MFT,MCH,MID,FT0,FV0
+[67650:ctf-reader]: [16:42:33][INFO] Read CTF 1 (1 of 177 in /Users/cz263673/alice/data/2022/MAY/517222/raw/1150/o2_ctf_run00517222_orbit2097512701_tf0000000001.root) in 0.000 s, 0.0101 s elapsed from previous CTF
+[67650:ctf-reader]: [16:42:33][INFO] Run:0517222 TF:741 Orbit:2097607421 CteationTime:1653817442838 Detectors: ITS,TPC,TRD,TOF,PHS,CPV,EMC,MFT,MCH,MID,FT0,FV0
+[67650:ctf-reader]: [16:42:33][INFO] Read CTF 2 (2 of 177 in /Users/cz263673/alice/data/2022/MAY/517222/raw/1150/o2_ctf_run00517222_orbit2097512701_tf0000000001.root) in 0.020 s, 0.0110 s elapsed from previous CTF
+[67650:ctf-reader]: [16:42:33][INFO] Run:0517222 TF:1111 Orbit:2097654781 CteationTime:1653817447049 Detectors: ITS,TPC,TRD,TOF,PHS,CPV,EMC,MFT,MCH,MID,FT0,FV0
+[67650:ctf-reader]: [16:42:33][INFO] Read CTF 3 (3 of 177 in /Users/cz263673/alice/data/2022/MAY/517222/raw/1150/o2_ctf_run00517222_orbit2097512701_tf0000000001.root) in 0.000 s, 0.0098 s elapsed from previous CTF
+[67650:ctf-reader]: [16:42:33][INFO] Run:0517222 TF:1481 Orbit:2097702141 CteationTime:1653817451261 Detectors: ITS,TPC,TRD,TOF,PHS,CPV,EMC,MFT,MCH,MID,FT0,FV0
+[67650:ctf-reader]: [16:42:33][INFO] Read CTF 4 (4 of 177 in /Users/cz263673/alice/data/2022/MAY/517222/raw/1150/o2_ctf_run00517222_orbit2097512701_tf0000000001.root) in 0.000 s, 0.0108 s elapsed from previous CTF
+[67650:ctf-reader]: [16:42:33][INFO] Run:0517222 TF:1851 Orbit:2097749501 CteationTime:1653817455473 Detectors: ITS,TPC,TRD,TOF,PHS,CPV,EMC,MFT,MCH,MID,FT0,FV0
+[67650:ctf-reader]: [16:42:33][INFO] Read CTF 5 (5 of 177 in /Users/cz263673/alice/data/2022/MAY/517222/raw/1150/o2_ctf_run00517222_orbit2097512701_tf0000000001.root) in 0.010 s, 0.0095 s elapsed from previous CTF
+[67650:ctf-reader]: [16:42:33][INFO] Run:0517222 TF:2221 Orbit:2097796861 CteationTime:1653817459686 Detectors: ITS,TPC,TRD,TOF,PHS,CPV,EMC,MFT,MCH,MID,FT0,FV0
+[67650:ctf-reader]: [16:42:33][INFO] Read CTF 6 (6 of 177 in /Users/cz263673/alice/data/2022/MAY/517222/raw/1150/o2_ctf_run00517222_orbit2097512701_tf0000000001.root) in 0.010 s, 0.0086 s elapsed from previous CTF
+[67650:ctf-reader]: [16:42:33][INFO] Run:0517222 TF:2591 Orbit:2097844221 CteationTime:1653817463895 Detectors: ITS,TPC,TRD,TOF,PHS,CPV,EMC,MFT,MCH,MID,FT0,FV0
+[67650:ctf-reader]: [16:42:33][INFO] Read CTF 7 (7 of 177 in /Users/cz263673/alice/data/2022/MAY/517222/raw/1150/o2_ctf_run00517222_orbit2097512701_tf0000000001.root) in 0.000 s, 0.0083 s elapsed from previous CTF
+[67650:ctf-reader]: [16:42:33][INFO] Run:0517222 TF:2961 Orbit:2097891581 CteationTime:1653817468107 Detectors: ITS,TPC,TRD,TOF,PHS,CPV,EMC,MFT,MCH,MID,FT0,FV0
+[67650:ctf-reader]: [16:42:33][INFO] Read CTF 8 (8 of 177 in /Users/cz263673/alice/data/2022/MAY/517222/raw/1150/o2_ctf_run00517222_orbit2097512701_tf0000000001.root) in 0.000 s, 0.0106 s elapsed from previous CTF
+[67650:ctf-reader]: [16:42:33][INFO] Run:0517222 TF:3331 Orbit:2097938941 CteationTime:1653817472318 Detectors: ITS,TPC,TRD,TOF,PHS,CPV,EMC,MFT,MCH,MID,FT0,FV0
+[67650:ctf-reader]: [16:42:33][INFO] Read CTF 9 (9 of 177 in /Users/cz263673/alice/data/2022/MAY/517222/raw/1150/o2_ctf_run00517222_orbit2097512701_tf0000000001.root) in 0.020 s, 0.0104 s elapsed from previous CTF
+[67650:ctf-reader]: [16:42:33][INFO] All CTFs from selected range were injected, stopping
+[67650:ctf-reader]: [16:42:33][INFO] CTFReader stops processing, 1 files read, 0 files failed
+[67650:ctf-reader]: [16:42:33][INFO] CTF reading total timing: Cpu: 1.120 Real: 1.480 s for 10 TFs in 0 loops
+[67650:ctf-reader]: [16:42:33][INFO] Sending end-of-stream message to channel from_ctf-reader_to_internal-dpl-ccdb-backend
+[67650:ctf-reader]: [16:42:33][INFO] Sending end-of-stream message to channel from_ctf-reader_to_mch-entropy-decoder
+[67650:ctf-reader]: [16:42:33][INFO] Sending end-of-stream message to channel from_ctf-reader_to_internal-dpl-injected-dummy-sink
+[67651:internal-dpl-ccdb-backend]: [16:42:36][ALARM] Curl request to https://alice-ccdb.cern.ch/CTP/Calib/OrbitReset/1653817434417/ failed with result 60, response code: -1
+[67651:internal-dpl-ccdb-backend]: [16:42:36][FATAL] Unable to find object CTP/Calib/OrbitReset/1653817434417
+[67651:internal-dpl-ccdb-backend]: For later analysis we write a core dump to core_dump_67651
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/FairLogger/v1.11.1-local1/lib/libFairLogger.1.11.1.dylib] fair::Logger::~Logger() (no debug info)
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/O2/dev-local1/lib/libO2Framework.dylib] std::__1::__function::__func<o2::framework::CCDBHelpers::fetchFromCCDB()::$_0::operator()(o2::framework::CallbackService&, o2::framework::ConfigParamRegistry const&, o2::framework::DeviceSpec const&) const::'lambda'(o2::framework::DataTakingContext&, o2::framework::DataAllocator&, o2::framework::TimingInfo&), std::__1::allocator<o2::framework::CCDBHelpers::fetchFromCCDB()::$_0::operator()(o2::framework::CallbackService&, o2::framework::ConfigParamRegistry const&, o2::framework::DeviceSpec const&) const::'lambda'(o2::framework::DataTakingContext&, o2::framework::DataAllocator&, o2::framework::TimingInfo&)>, void (o2::framework::DataTakingContext&, o2::framework::DataAllocator&, o2::framework::TimingInfo&)>::operator()(o2::framework::DataTakingContext&, o2::framework::DataAllocator&, o2::framework::TimingInfo&) /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/function.h:352
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/O2/dev-local1/lib/libO2Framework.dylib] o2::framework::DataProcessingDevice::tryDispatchComputation(o2::framework::DataProcessorContext&, std::__1::vector<o2::framework::DataRelayer::RecordAction, std::__1::allocator<o2::framework::DataRelayer::RecordAction> >&)::$_27::operator()(o2::framework::DataRelayer::RecordAction&) const /Users/cz263673/alice/sw/SOURCES/O2/dev/0/Framework/Core/src/DataProcessingDevice.cxx:1944
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/O2/dev-local1/lib/libO2Framework.dylib] o2::framework::DataProcessingDevice::tryDispatchComputation(o2::framework::DataProcessorContext&, std::__1::vector<o2::framework::DataRelayer::RecordAction, std::__1::allocator<o2::framework::DataRelayer::RecordAction> >&) /Users/cz263673/alice/sw/SOURCES/O2/dev/0/Framework/Core/src/DataProcessingDevice.cxx:1977
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/O2/dev-local1/lib/libO2Framework.dylib] o2::framework::DataProcessingDevice::doRun(o2::framework::DataProcessorContext&) /Users/cz263673/alice/sw/SOURCES/O2/dev/0/Framework/Core/src/DataProcessingDevice.cxx:1295
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/O2/dev-local1/lib/libO2Framework.dylib] o2::framework::DataProcessingDevice::Run() /Users/cz263673/alice/sw/SOURCES/O2/dev/0/Framework/Core/src/DataProcessingDevice.cxx:1119
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/FairMQ/v1.4.55-local1/lib/libFairMQ.1.4.55.dylib] fair::mq::Device::RunWrapper() (no debug info)
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/FairMQ/v1.4.55-local1/lib/libFairMQ.1.4.55.dylib] std::__1::__function::__func<fair::mq::Device::Device(fair::mq::ProgOptions*, fair::mq::tools::Version)::$_1, std::__1::allocator<fair::mq::Device::Device(fair::mq::ProgOptions*, fair::mq::tools::Version)::$_1>, void (fair::mq::State)>::operator()(fair::mq::State&&) (no debug info)
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/FairMQ/v1.4.55-local1/lib/libFairMQStateMachine.1.4.55.dylib] boost::detail::function::void_function_obj_invoker1<std::__1::function<void (fair::mq::State)>, void, fair::mq::State>::invoke(boost::detail::function::function_buffer&, fair::mq::State) (no debug info)
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/FairMQ/v1.4.55-local1/lib/libFairMQStateMachine.1.4.55.dylib] boost::signals2::detail::slot_call_iterator_t<boost::signals2::detail::variadic_slot_invoker<boost::signals2::detail::void_type, fair::mq::State>, std::__1::__list_iterator<boost::shared_ptr<boost::signals2::detail::connection_body<std::__1::pair<boost::signals2::detail::slot_meta_group, boost::optional<int> >, boost::signals2::slot<void (fair::mq::State), boost::function<void (fair::mq::State)> >, boost::signals2::mutex> >, void*>, boost::signals2::detail::connection_body<std::__1::pair<boost::signals2::detail::slot_meta_group, boost::optional<int> >, boost::signals2::slot<void (fair::mq::State), boost::function<void (fair::mq::State)> >, boost::signals2::mutex> >::dereference() const (no debug info)
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/FairMQ/v1.4.55-local1/lib/libFairMQStateMachine.1.4.55.dylib] boost::signals2::detail::signal_impl<void (fair::mq::State), boost::signals2::optional_last_value<void>, int, std::__1::less<int>, boost::function<void (fair::mq::State)>, boost::function<void (boost::signals2::connection const&, fair::mq::State)>, boost::signals2::mutex>::operator()(fair::mq::State) (no debug info)
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/FairMQ/v1.4.55-local1/lib/libFairMQStateMachine.1.4.55.dylib] fair::mq::fsm::Machine_::ProcessWork() (no debug info)
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/FairMQ/v1.4.55-local1/lib/libFairMQStateMachine.1.4.55.dylib] fair::mq::StateMachine::ProcessWork() (no debug info)
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/FairMQ/v1.4.55-local1/lib/libFairMQ.1.4.55.dylib] fair::mq::DeviceRunner::Run() (no debug info)
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/O2/dev-local1/lib/libO2Framework.dylib] doChild(int, char**, o2::framework::ServiceRegistry&, o2::framework::RunningWorkflowInfo const&, o2::framework::RunningDeviceRef, o2::framework::ProcessingPolicies, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, uv_loop_s*) /Users/cz263673/alice/sw/SOURCES/O2/dev/0/Framework/Core/src/runDataProcessing.cxx:0
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/O2/dev-local1/lib/libO2Framework.dylib] runStateMachine(std::__1::vector<o2::framework::DataProcessorSpec, std::__1::allocator<o2::framework::DataProcessorSpec> > const&, WorkflowInfo const&, std::__1::vector<o2::framework::DataProcessorInfo, std::__1::allocator<o2::framework::DataProcessorInfo> > const&, o2::framework::CommandInfo const&, o2::framework::DriverControl&, o2::framework::DriverInfo&, std::__1::vector<o2::framework::DeviceMetricsInfo, std::__1::allocator<o2::framework::DeviceMetricsInfo> >&, boost::program_options::variables_map&, std::__1::vector<o2::framework::ServiceSpec, std::__1::allocator<o2::framework::ServiceSpec> >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) /Users/cz263673/alice/sw/SOURCES/O2/dev/0/Framework/Core/src/runDataProcessing.cxx:0
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/O2/dev-local1/lib/libO2Framework.dylib] doMain(int, char**, std::__1::vector<o2::framework::DataProcessorSpec, std::__1::allocator<o2::framework::DataProcessorSpec> > const&, std::__1::vector<o2::framework::ChannelConfigurationPolicy, std::__1::allocator<o2::framework::ChannelConfigurationPolicy> > const&, std::__1::vector<o2::framework::CompletionPolicy, std::__1::allocator<o2::framework::CompletionPolicy> > const&, std::__1::vector<o2::framework::DispatchPolicy, std::__1::allocator<o2::framework::DispatchPolicy> > const&, std::__1::vector<o2::framework::ResourcePolicy, std::__1::allocator<o2::framework::ResourcePolicy> > const&, std::__1::vector<o2::framework::CallbacksPolicy, std::__1::allocator<o2::framework::CallbacksPolicy> > const&, std::__1::vector<o2::framework::SendingPolicy, std::__1::allocator<o2::framework::SendingPolicy> > const&, std::__1::vector<o2::framework::ConfigParamSpec, std::__1::allocator<o2::framework::ConfigParamSpec> > const&, o2::framework::ConfigContext&) /Users/cz263673/alice/sw/SOURCES/O2/dev/0/Framework/Core/src/runDataProcessing.cxx:0
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/O2/dev-local1/bin/o2-ctf-reader-workflow] mainNoCatch(int, char**) /Users/cz263673/alice/sw/SOURCES/O2/dev/0/Framework/Core/include/Framework/runDataProcessing.h:0
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/O2/dev-local1/bin/o2-ctf-reader-workflow] main /Users/cz263673/alice/sw/SOURCES/O2/dev/0/Framework/Core/include/Framework/runDataProcessing.h:0
+[67651:internal-dpl-ccdb-backend]: [/usr/lib/dyld] start (no debug info)
+[67651:internal-dpl-ccdb-backend]: [16:42:37][STATE] Exiting FairMQ state machine
+[67651:internal-dpl-ccdb-backend]: [16:42:37][FATAL] unknown error while setting up workflow in o2-ctf-reader-workflow.
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/FairLogger/v1.11.1-local1/lib/libFairLogger.1.11.1.dylib] fair::Logger::~Logger() (no debug info)
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/O2/dev-local1/lib/libO2Framework.dylib] doUnknownException(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, char const*) /Users/cz263673/alice/sw/SOURCES/O2/dev/0/Framework/Core/src/runDataProcessing.cxx:1024
+[67651:internal-dpl-ccdb-backend]: [/Users/cz263673/alice/sw/osx_arm64/O2/dev-local1/bin/o2-ctf-reader-workflow] main /Users/cz263673/alice/sw/SOURCES/O2/dev/0/Framework/Core/include/Framework/runDataProcessing.h:249
+[67651:internal-dpl-ccdb-backend]: [/usr/lib/dyld] start (no debug info)
+[ERROR] pid 67651 (internal-dpl-ccdb-backend) crashed with 1
+[INFO] QUIT_REQUESTED
+[67661:mch-track-writer]: [16:42:37][INFO] Received device shutdown request (signal 15).
+[67661:mch-track-writer]: [16:42:37][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[67661:mch-track-writer]: [16:42:37][INFO] New state requested. No timeout set, quitting immediately as per --completion-policy
+[67658:mch-global-cluster-writer]: [16:42:37][INFO] Received device shutdown request (signal 15).
+[67658:mch-global-cluster-writer]: [16:42:37][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[67649:internal-dpl-clock]: [16:42:37][INFO] Received device shutdown request (signal 15).
+[67649:internal-dpl-clock]: [16:42:37][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[67658:mch-global-cluster-writer]: [16:42:37][INFO] New state requested. No timeout set, quitting immediately as per --completion-policy
+[67649:internal-dpl-clock]: [16:42:37][INFO] New state requested. No timeout set, quitting immediately as per --completion-policy
+[67649:internal-dpl-clock]: [16:42:37][STATE] RUNNING ---> READY
+[67649:internal-dpl-clock]: [16:42:37][STATE] READY ---> RESETTING TASK
+[67649:internal-dpl-clock]: [16:42:37][STATE] RESETTING TASK ---> DEVICE READY
+[67649:internal-dpl-clock]: [16:42:37][STATE] No transition from state DEVICE_READY on transition AUTO
+[67649:internal-dpl-clock]: [16:42:37][STATE] DEVICE READY ---> RESETTING DEVICE
+[67649:internal-dpl-clock]: [16:42:37][STATE] RESETTING DEVICE ---> IDLE
+[67649:internal-dpl-clock]: [16:42:37][STATE] IDLE ---> EXITING
+[67649:internal-dpl-clock]: [16:42:37][STATE] Exiting FairMQ state machine
+[67660:internal-dpl-injected-dummy-sink]: [16:42:37][INFO] Received device shutdown request (signal 15).
+[67660:internal-dpl-injected-dummy-sink]: [16:42:37][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[67660:internal-dpl-injected-dummy-sink]: [16:42:37][INFO] New state requested. No timeout set, quitting immediately as per --completion-policy
+[67660:internal-dpl-injected-dummy-sink]: [16:42:37][STATE] RUNNING ---> READY
+[67660:internal-dpl-injected-dummy-sink]: [16:42:37][STATE] READY ---> RESETTING TASK
+[67660:internal-dpl-injected-dummy-sink]: [16:42:37][STATE] RESETTING TASK ---> DEVICE READY
+[67660:internal-dpl-injected-dummy-sink]: [16:42:37][STATE] No transition from state DEVICE_READY on transition AUTO
+[67660:internal-dpl-injected-dummy-sink]: [16:42:37][STATE] DEVICE READY ---> RESETTING DEVICE
+[67660:internal-dpl-injected-dummy-sink]: [16:42:37][STATE] RESETTING DEVICE ---> IDLE
+[67660:internal-dpl-injected-dummy-sink]: [16:42:37][STATE] IDLE ---> EXITING
+[67660:internal-dpl-injected-dummy-sink]: [16:42:37][STATE] Exiting FairMQ state machine
+[67650:ctf-reader]: [16:42:37][INFO] Received device shutdown request (signal 15).
+[67650:ctf-reader]: [16:42:37][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[67650:ctf-reader]: [16:42:37][INFO] New state requested. No timeout set, quitting immediately as per --completion-policy
+[67650:ctf-reader]: [16:42:37][STATE] RUNNING ---> READY
+[67650:ctf-reader]: [16:42:37][STATE] READY ---> RESETTING TASK
+[67650:ctf-reader]: [16:42:37][STATE] RESETTING TASK ---> DEVICE READY
+[67650:ctf-reader]: [16:42:37][STATE] No transition from state DEVICE_READY on transition AUTO
+[67650:ctf-reader]: [16:42:37][STATE] DEVICE READY ---> RESETTING DEVICE
+[67650:ctf-reader]: [16:42:37][STATE] RESETTING DEVICE ---> IDLE
+[67650:ctf-reader]: [16:42:37][STATE] IDLE ---> EXITING
+[67650:ctf-reader]: [16:42:37][STATE] Exiting FairMQ state machine
+[67653:mch-digit-filtering]: [16:42:37][INFO] Received device shutdown request (signal 15).
+[67653:mch-digit-filtering]: [16:42:37][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[67653:mch-digit-filtering]: [16:42:37][INFO] New state requested. No timeout set, quitting immediately as per --completion-policy
+[67653:mch-digit-filtering]: [16:42:37][STATE] RUNNING ---> READY
+[67653:mch-digit-filtering]: [16:42:37][STATE] READY ---> RESETTING TASK
+[67653:mch-digit-filtering]: [16:42:37][STATE] RESETTING TASK ---> DEVICE READY
+[67653:mch-digit-filtering]: [16:42:37][STATE] No transition from state DEVICE_READY on transition AUTO
+[67653:mch-digit-filtering]: [16:42:37][STATE] DEVICE READY ---> RESETTING DEVICE
+[67653:mch-digit-filtering]: [16:42:37][STATE] RESETTING DEVICE ---> IDLE
+[67653:mch-digit-filtering]: [16:42:37][STATE] IDLE ---> EXITING
+[67653:mch-digit-filtering]: [16:42:37][STATE] Exiting FairMQ state machine
+[67659:mch-track-finder]: [16:42:37][INFO] Received device shutdown request (signal 15).
+[67659:mch-track-finder]: [16:42:37][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[67659:mch-track-finder]: [16:42:37][INFO] New state requested. No timeout set, quitting immediately as per --completion-policy
+[67659:mch-track-finder]: [16:42:37][INFO] number of candidates tracked = 0
+[67659:mch-track-finder]: [16:42:37][INFO] number of times extrapToZCov() is called = 0
+[67659:mch-track-finder]: [16:42:37][INFO] number of times Field() is called = 0
+[67659:mch-track-finder]: [16:42:37][INFO] number of times tryOneClusterFast() is called = 0
+[67659:mch-track-finder]: [16:42:37][INFO] number of times tryOneCluster() is called = 0
+[67659:mch-track-finder]: [16:42:37][INFO] findTrackCandidates duration = 0 s
+[67659:mch-track-finder]: [16:42:37][INFO] findMoreTrackCandidates duration = 0 s
+[67659:mch-track-finder]: [16:42:37][INFO] followTracks duration = 0 s
+[67659:mch-track-finder]: [16:42:37][INFO] improveTracks duration = 0 s
+[67659:mch-track-finder]: [16:42:37][INFO] removeConnectedTracks duration = 0 s
+[67659:mch-track-finder]: [16:42:37][INFO] refineTracks duration = 0 s
+[67659:mch-track-finder]: [16:42:37][INFO] tracking duration = 0 s
+[67659:mch-track-finder]: [16:42:37][STATE] RUNNING ---> READY
+[67659:mch-track-finder]: [16:42:37][STATE] READY ---> RESETTING TASK
+[67659:mch-track-finder]: [16:42:37][STATE] RESETTING TASK ---> DEVICE READY
+[67659:mch-track-finder]: [16:42:37][STATE] No transition from state DEVICE_READY on transition AUTO
+[67659:mch-track-finder]: [16:42:37][STATE] DEVICE READY ---> RESETTING DEVICE
+[67659:mch-track-finder]: [16:42:37][STATE] RESETTING DEVICE ---> IDLE
+[67659:mch-track-finder]: [16:42:37][STATE] IDLE ---> EXITING
+[67659:mch-track-finder]: [16:42:37][STATE] Exiting FairMQ state machine
+[67655:mch-precluster-finder]: [16:42:37][INFO] Received device shutdown request (signal 15).
+[67655:mch-precluster-finder]: [16:42:37][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[67655:mch-precluster-finder]: [16:42:37][INFO] New state requested. No timeout set, quitting immediately as per --completion-policy
+[67655:mch-precluster-finder]: [16:42:37][INFO] reset precluster finder duration = 0 ms
+[67655:mch-precluster-finder]: [16:42:37][INFO] load digits duration = 0 ms
+[67655:mch-precluster-finder]: [16:42:37][INFO] discard high occupancy duration = 0 ms
+[67655:mch-precluster-finder]: [16:42:37][INFO] precluster finder duration = 0 ms
+[67655:mch-precluster-finder]: [16:42:37][INFO] store precluster duration = 0 ms
+[67655:mch-precluster-finder]: [16:42:37][INFO] deinitializing preclusterizer in: 0.0155 ms
+[67655:mch-precluster-finder]: [16:42:37][STATE] RUNNING ---> READY
+[67655:mch-precluster-finder]: [16:42:37][STATE] READY ---> RESETTING TASK
+[67655:mch-precluster-finder]: [16:42:37][STATE] RESETTING TASK ---> DEVICE READY
+[67655:mch-precluster-finder]: [16:42:37][STATE] DEVICE READY ---> RESETTING DEVICE
+[67655:mch-precluster-finder]: [16:42:37][STATE] RESETTING DEVICE ---> IDLE
+[67655:mch-precluster-finder]: [16:42:37][STATE] IDLE ---> EXITING
+[67655:mch-precluster-finder]: [16:42:37][STATE] Exiting FairMQ state machine
+[67652:mch-entropy-decoder]: [16:42:37][INFO] Received device shutdown request (signal 15).
+[67652:mch-entropy-decoder]: [16:42:37][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[67652:mch-entropy-decoder]: [16:42:37][INFO] New state requested. No timeout set, quitting immediately as per --completion-policy
+[67652:mch-entropy-decoder]: [16:42:37][STATE] RUNNING ---> READY
+[67652:mch-entropy-decoder]: [16:42:37][STATE] READY ---> RESETTING TASK
+[67652:mch-entropy-decoder]: [16:42:37][STATE] RESETTING TASK ---> DEVICE READY
+[67652:mch-entropy-decoder]: [16:42:37][STATE] DEVICE READY ---> RESETTING DEVICE
+[67652:mch-entropy-decoder]: [16:42:37][STATE] RESETTING DEVICE ---> IDLE
+[67652:mch-entropy-decoder]: [16:42:37][STATE] IDLE ---> EXITING
+[67652:mch-entropy-decoder]: [16:42:37][STATE] Exiting FairMQ state machine
+[67657:mch-cluster-transformer]: [16:42:37][INFO] Received device shutdown request (signal 15).
+[67657:mch-cluster-transformer]: [16:42:37][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[67657:mch-cluster-transformer]: [16:42:37][INFO] New state requested. No timeout set, quitting immediately as per --completion-policy
+[67657:mch-cluster-transformer]: [16:42:37][STATE] RUNNING ---> READY
+[67657:mch-cluster-transformer]: [16:42:37][STATE] READY ---> RESETTING TASK
+[67657:mch-cluster-transformer]: [16:42:37][STATE] RESETTING TASK ---> DEVICE READY
+[67657:mch-cluster-transformer]: [16:42:37][STATE] DEVICE READY ---> RESETTING DEVICE
+[67657:mch-cluster-transformer]: [16:42:37][STATE] RESETTING DEVICE ---> IDLE
+[67657:mch-cluster-transformer]: [16:42:37][STATE] IDLE ---> EXITING
+[67657:mch-cluster-transformer]: [16:42:37][STATE] Exiting FairMQ state machine
+[67656:mch-cluster-finder]: [16:42:37][INFO] Received device shutdown request (signal 15).
+[67656:mch-cluster-finder]: [16:42:37][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[67656:mch-cluster-finder]: [16:42:37][INFO] New state requested. No timeout set, quitting immediately as per --completion-policy
+[67656:mch-cluster-finder]: [16:42:37][INFO] cluster finder duration = 0 s
+[67656:mch-cluster-finder]: [16:42:37][STATE] RUNNING ---> READY
+[67656:mch-cluster-finder]: [16:42:37][STATE] READY ---> RESETTING TASK
+[67656:mch-cluster-finder]: [16:42:37][STATE] RESETTING TASK ---> DEVICE READY
+[67656:mch-cluster-finder]: [16:42:37][STATE] DEVICE READY ---> RESETTING DEVICE
+[67656:mch-cluster-finder]: [16:42:37][STATE] RESETTING DEVICE ---> IDLE
+[67656:mch-cluster-finder]: [16:42:37][STATE] IDLE ---> EXITING
+[67656:mch-cluster-finder]: [16:42:37][STATE] Exiting FairMQ state machine
+[67654:mch-time-cluster-finder]: [16:42:37][INFO] Received device shutdown request (signal 15).
+[67654:mch-time-cluster-finder]: [16:42:37][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[67654:mch-time-cluster-finder]: [16:42:37][INFO] New state requested. No timeout set, quitting immediately as per --completion-policy
+[67654:mch-time-cluster-finder]: [16:42:37][STATE] RUNNING ---> READY
+[67654:mch-time-cluster-finder]: [16:42:37][STATE] READY ---> RESETTING TASK
+[67654:mch-time-cluster-finder]: [16:42:37][STATE] RESETTING TASK ---> DEVICE READY
+[67654:mch-time-cluster-finder]: [16:42:37][STATE] DEVICE READY ---> RESETTING DEVICE
+[67654:mch-time-cluster-finder]: [16:42:37][STATE] RESETTING DEVICE ---> IDLE
+[67654:mch-time-cluster-finder]: [16:42:37][STATE] IDLE ---> EXITING
+[67654:mch-time-cluster-finder]: [16:42:37][STATE] Exiting FairMQ state machine
+[67658:mch-global-cluster-writer]: [16:42:38][STATE] RUNNING ---> READY
+[67661:mch-track-writer]: [16:42:38][STATE] RUNNING ---> READY
+[67658:mch-global-cluster-writer]: [16:42:38][STATE] READY ---> RESETTING TASK
+[67661:mch-track-writer]: [16:42:38][STATE] READY ---> RESETTING TASK
+[67658:mch-global-cluster-writer]: [16:42:38][STATE] RESETTING TASK ---> DEVICE READY
+[67658:mch-global-cluster-writer]: [16:42:38][STATE] DEVICE READY ---> RESETTING DEVICE
+[67658:mch-global-cluster-writer]: [16:42:38][INFO] Cleaning up for shared memory id '4227144e'...
+[67658:mch-global-cluster-writer]: [16:42:38][INFO] Found 0 unmanaged regions...
+[67658:mch-global-cluster-writer]: [16:42:38][INFO] Found 1 managed segments...
+[67658:mch-global-cluster-writer]: [16:42:38][INFO] Successfully removed 'fmq_4227144e_m_0'.
+[67658:mch-global-cluster-writer]: [16:42:38][INFO] Successfully removed 'fmq_4227144e_mng'.
+[67661:mch-track-writer]: [16:42:38][STATE] RESETTING TASK ---> DEVICE READY
+[67661:mch-track-writer]: [16:42:38][STATE] No transition from state DEVICE_READY on transition AUTO
+[67661:mch-track-writer]: [16:42:38][STATE] DEVICE READY ---> RESETTING DEVICE
+[67661:mch-track-writer]: [16:42:38][STATE] RESETTING DEVICE ---> IDLE
+[67661:mch-track-writer]: [16:42:38][STATE] IDLE ---> EXITING
+[67661:mch-track-writer]: [16:42:38][STATE] Exiting FairMQ state machine
+[67658:mch-global-cluster-writer]: [16:42:38][STATE] RESETTING DEVICE ---> IDLE
+[67658:mch-global-cluster-writer]: [16:42:38][STATE] IDLE ---> EXITING
+[67658:mch-global-cluster-writer]: [16:42:38][STATE] Exiting FairMQ state machine
+[INFO] Dumping used configuration in dpl-config.json
+[ERROR] SEVERE: Device internal-dpl-ccdb-backend (67651) had at least one message above severity fatal: Unable to find object CTP/Calib/OrbitReset/1653817434417
