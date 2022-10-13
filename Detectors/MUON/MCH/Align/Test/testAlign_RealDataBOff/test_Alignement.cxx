@@ -166,24 +166,20 @@ double signalCut(double *x, double *p);
 double backgroundCut(double *x, double *p);
 void WriteHistos(TFile *f, const char *dirName,
                  const std::vector<TH1 *> &histos);
-/*
-void test_Alignement(int runNumber, std::string mchFileName, bool
-applyTrackSelection = false, bool selectSignal = false, bool rejectBackground =
-false, std::string outFileName = "");
-*/
-
 mch::Track *MCHFormatConvert(mch::TrackMCH &track,
                              const std::vector<mch::Cluster> &clusters);
 
+
+
 //_________________________________________________________________________________________________
 void test_Alignement(std::string prefix, std::string mchFileName,
-                     std::string muonFileName, std::string recDataFileName,
-                     std::string recConsFileName,
+                     std::string muonFileName == "", std::string recDataFileName == "",
+                     std::string recConsFileName == "",
                      std::string outFileName = "Alignment_data.root",
                      bool doAlign = true, Double_t weightRecord = 1,
-                     bool applyTrackSelection = false,
+                     bool applyTrackSelection = true,
                      bool selectSignal = false, bool rejectBackground = false) {
-  /// show the characteristics of the reconstructed tracks
+  /// show the characteristics of the reconstructed trackss
   /// store the ouput histograms in outFileName if any
   // make sure the correct mapping is loaded
   auto &segmentation = mch::mapping::segmentation(300);
@@ -193,16 +189,23 @@ void test_Alignement(std::string prefix, std::string mchFileName,
                   "this macro";
     exit(-1);
   }
+  if(applyTrackSelection){
+    LOG(info) << "Test in data mode";
+  }else{
+    LOG(info) << "Test in simulation mode";
+  }
 
-  // load magnetic field (from o2sim_grp.root) and geometry (from
-  // o2sim_geometry.root) and prepare track extrapolation to vertex (0,0,0)
+  ////////////////////////////////////////////////////////////////////////////
+  // Load magnetic field (from o2sim_grp.root) and geometry (form           //
+  // o2sim_geometry.root) and prepare track extrapolation to vertex (0,0,0) //
+  ////////////////////////////////////////////////////////////////////////////
 
   // getGRPFileName() if load with no prefix, it will search in the current
   // directory or you can specify a std::string_view object that indicate the
-  // files' directory
+  // files' directorys
 
-  std::cout << "Loading magnetic field and geometry from: " << prefix
-            << std::endl;
+  cout << "Loading magnetic field and geometry from: " << prefix
+            << endl;
   const auto grp =
       parameters::GRPObject::loadFrom(base::NameConf::getGRPFileName());
   // const auto grp =
@@ -214,10 +217,28 @@ void test_Alignement(std::string prefix, std::string mchFileName,
   base::GeometryManager::loadGeometry();
   transformation = o2::mch::geo::transformationFromTGeoManager(*gGeoManager);
 
-  // test_align = o2::mch::Alignment();
 
-  // MCH-MID matching, not useful for now since MID is not yet included in this
-  // stage
+  //////////////////
+  // Load tracks: //
+  //////////////////
+
+  // Input file: MCH -> mchtracks.root
+  cout << "Reading tracks..." << endl;
+  cout << "Reading MCH tracks..." <<endl;
+  std::string DataFile = Form("%s/%s", prefix.c_str(), mchFileName.c_str());
+  auto [fMCH, mchReader] = LoadData(DataFile.c_str(), "o2sim");
+
+  TTreeReaderValue<std::vector<mch::ROFRecord>> mchROFs = {*mchReader,
+                                                           "trackrofs"};
+  TTreeReaderValue<std::vector<mch::TrackMCH>> mchTracks = {*mchReader,
+                                                            "tracks"};
+  TTreeReaderValue<std::vector<mch::Cluster>> mchClusters = {*mchReader,
+                                                             "trackclusters"};
+
+
+  ///////////////////////////////////////////////////////////////////////                                                            
+  // Input file: MUON -> muontracks; as reference for MCH–MID matching //
+  ///////////////////////////////////////////////////////////////////////                                                            
   /*
   // find the first orbit of the first TF of this run
   uint32_t firstTForbit0(0);
@@ -228,46 +249,42 @@ void test_Alignement(std::string prefix, std::string mchFileName,
     LOG(warning) << "first orbit not found for this run";
   }
   */
-
-  // load tracks
-
-  // input file: MCH -> mchtracks.root
-  cout << "Reading tracks..." << endl;
-  std::string DataFile = Form("%s/%s", prefix.c_str(), mchFileName.c_str());
-  auto [fMCH, mchReader] = LoadData(DataFile.c_str(), "o2sim");
-
-  // tree entry do not correspond to tracks, there is only one single entry; all
-  // tracks and other data type are stored in a list.
-  TTreeReaderValue<std::vector<mch::ROFRecord>> mchROFs = {*mchReader,
-                                                           "trackrofs"};
-  TTreeReaderValue<std::vector<mch::TrackMCH>> mchTracks = {*mchReader,
-                                                            "tracks"};
-  TTreeReaderValue<std::vector<mch::Cluster>> mchClusters = {*mchReader,
-                                                             "trackclusters"};
-  //  TTreeReaderValue<std::vector<MCCompLabel>> mchLabels = {*mchReader,
-  //  "tracklabels"}; // for simulation test
-  // TTreeReaderValue<std::vector<mch::Digit>> mchDigits = {*mchReader,
-  // "trackdigits"};
-
-  // cout << mchReader->GetEntries() << " entries loaded" <<endl;
-
-  // input file: MUON -> muontracks; contains MCH–MID matching
-  auto [fMUON, muonReader] = LoadData(muonFileName.c_str(), "o2sim");
-  TTreeReaderValue<std::vector<dataformats::TrackMCHMID>> muonTracks = {
+  //                                                            
+  if(applyTrackSelection){
+    cout << "Reading MID muon tracks..." <<endl;
+    auto [fMUON, muonReader] = LoadData(muonFileName.c_str(), "o2sim");
+    TTreeReaderValue<std::vector<dataformats::TrackMCHMID>> muonTracks = {
       *muonReader, "tracks"};
-  int nTF = muonReader->GetEntries(false);
-  if (mchReader->GetEntries(false) != nTF) {
-    LOG(error) << mchFileName << " and " << muonFileName
+    int nTF = muonReader->GetEntries(false);
+    if (mchReader->GetEntries(false) != nTF) {
+      LOG(error) << mchFileName << " and " << muonFileName
                << " do not contain the same number of TF";
-    exit(-1);
-  }
+      exit(-1);
+    }
 
-  // open output file if any
+  }                                                             
+
+
+  /////////////////////////////////////////////////////
+  // Output file:                                    //
+  //    1. aligned params generated in this macro    //
+  //    2. records generated from alignment process  //
+  /////////////////////////////////////////////////////
+
   std::string Path_file = Form("./Records/%s", outFileName.c_str());
   TFile *fOut = TFile::Open(Path_file.c_str(), "RECREATE");
 
-  test_align->SetDoEvaluation(kTRUE);
+
+
+  ////////////////////////////////
+  // Configurations for aligner //
+  ////////////////////////////////
+
+  // cout << "Evaluation enabled for track/cluster" <<endl;
+  test_align->SetDoEvaluation(kTRUE); // show residuals for track-cluster
+  
   // fix chambers
+  cout << "Start chamber fixing.."<<endl;
   const Int_t chambers[] = {1, 10, 0};
   for (Int_t i = 0; chambers[i] > 0; ++i) {
     std::cout << "Fixing chamber " << chambers[i] << std::endl;
@@ -280,23 +297,13 @@ void test_Alignement(std::string prefix, std::string mchFileName,
 
   // initialize aligner
   test_align->init(recDataFileName, recConsFileName);
-
   test_align->SetBFieldOn(mch::TrackExtrap::isFieldON());
-  // load initial global parameters and constraints for Millepede
-  // Maybe there will be some initial parameters?
-  /*
-    // read initial params and constraints from CCDB?
 
-    test_align->InitGlobalParameters(Double_t* par);
-  */
 
-  // config for detector constraints:
-  /*
-
-  */
-
-  // create root file for saving results of alignment process(GlobalFit)
-  // 3 branchs: params, errors, pulls
+  /////////////////////////////////////////////////////////////////////////
+  // Create root file for saving results of alignment process(GlobalFit) //
+  // 3 branches: params, errors, pulls                                   //
+  /////////////////////////////////////////////////////////////////////////
 
   int NGlobalPar = test_align->fNGlobal;
   double params[NGlobalPar];
@@ -308,6 +315,13 @@ void test_Alignement(std::string prefix, std::string mchFileName,
   TreeOut->Branch("params", params, "params[NGlobalPar]/D");
   TreeOut->Branch("errors", errors, "errors[NGlobalPar]/D");
   TreeOut->Branch("pulls", pulls, "pulls[NGlobalPar]/D");
+
+
+
+
+  //////////////////////////////////////
+  // Main loop for alignment proecess //
+  //////////////////////////////////////
 
   cout << "Start processing..." << endl;
   // processing for each track
